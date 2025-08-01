@@ -137,7 +137,7 @@ const Skills = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
               'HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'React Native',
-              'Git', 'Bootstrap', 'Tailwind', 'Socket.IO', 'CorelDRAW', 'Figma'
+              'Git', 'Bootstrap', 'Tailwind', 'Socket.IO', 'CorelDRAW', 'Docker'
             ].map((tech, index) => (
               <motion.div
                 key={tech}

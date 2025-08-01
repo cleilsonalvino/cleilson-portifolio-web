@@ -97,7 +97,6 @@ const Header = () => {
               { icon: Github, href: 'https://github.com/cleilsonalvino', label: 'GitHub' },
               { icon: Linkedin, href: 'https://www.linkedin.com/in/cleilsonalvino/', label: 'LinkedIn' },
               { icon: Instagram, href: 'https://www.instagram.com/cleilsonalvino/', label: 'Instagram' },
-              { icon: MessageCircle, href: '#', label: 'WhatsApp' }
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}

@@ -10,7 +10,6 @@ const Footer = () => {
     { icon: Github, href: 'https://github.com/cleilsonalvino', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/cleilsonalvino/', label: 'LinkedIn' },
     { icon: Instagram, href: 'https://www.instagram.com/cleilsonalvino/', label: 'Instagram' },
-    { icon: MessageCircle, href: '#', label: 'WhatsApp' }
   ];
 
   const quickLinks = [
@@ -94,8 +93,8 @@ const Footer = () => {
             >
               <h4 className="text-xl font-semibold mb-6">Contato</h4>
               <div className="space-y-3 text-gray-300">
-                <p>cleilsonalvino@email.com</p>
-                <p>+55 (XX) XXXXX-XXXX</p>
+                <p>cleiussonalves1011@gmail.com</p>
+                <p>+55 (79) 99861-5536</p>
                 <p>Brasil</p>
               </div>
               

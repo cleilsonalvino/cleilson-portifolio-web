@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Code, Target, Heart, Lightbulb } from 'lucide-react';
+import GoogleAd from './GoogleAd';
 
 const About = () => {
   const features = [
@@ -40,6 +41,8 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-8"></div>
         </motion.div>
+
+        <GoogleAd/>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div

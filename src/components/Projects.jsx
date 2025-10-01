@@ -7,6 +7,7 @@ import {
   Palette,
   Database,
   ClipboardPenLine,
+  WebhookIcon
 } from "lucide-react";
 import Slider from "react-slick";
 
@@ -14,6 +15,14 @@ import appImage from "../assets/app.png";
 import controleEstoque1 from "../assets/controle-estoque1.png";
 import designer from "../assets/camisas/1.png";
 import producao from "../assets/controledeproducao/2.png";
+import performanceret from "../assets/performanceret.png";
+import ajafs from "../assets/ajafs.png";
+import feedtrack from "../assets/feedtrack.png";
+import feedtrack2 from "../assets/feedtrack2.png";
+
+
+
+
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -88,8 +97,8 @@ const Projects = () => {
       description: "Controle total de pedidos durante o processo de produção",
       images: [producao],
       technologies: ["Postgres", "Javascript", "React"],
-      category: "Design",
-      icon: ClipboardPenLine,
+      category: "Web",
+      icon: WebhookIcon,
       features: [
         "Processo Produtivo",
         "Análise de Dados",
@@ -103,6 +112,65 @@ const Projects = () => {
         behance: "",
       },
     },
+    {
+      id: 5,
+      title: "Performance Ret",
+      description: "Site desenvolvido para empresa Permormance Ret",
+      images: [performanceret],
+      technologies: ["Javascript", "React", "HTML", "CSS", "Tailwind"],
+      category: "Web",
+      icon: WebhookIcon,
+      features: [
+        "Site responsivo",
+        "Landing-page completa",
+        "Links de Pagamento",
+        "Planos",
+
+      ],
+      links: {
+        site:'https://www.retperformance.com/'
+      },
+    },
+    {
+      id: 6,
+      title: "AJAFS",
+      description: "Site desenvolvido para empresa AJAFS",
+      images: [ajafs],
+      technologies: ["Javascript", "React", "HTML", "CSS", "Tailwind"],
+      category: "Web",
+      icon: WebhookIcon,
+      features: [
+        "Site responsivo",
+        "Landing-page completa",
+        "Informações de contato",
+        "Serviços ofertados",
+
+      ],
+      links: {
+        site:'https://www.ajafs.com.br/'
+      },
+    },
+    {
+      id: 7,
+      title: "Feedtrack",
+      description: "Sistema desenvolvido na conclusão do curso técnico de desenvolvimento de sistemas",
+      images: [feedtrack, feedtrack2],
+      technologies: ["Javascript", "React", "HTML", "CSS", "Tailwind", "PostGres", "TypeScript", "NodeJS", "Express", "DDD", "Docker", "VPS", "Dominio própio", "documentação", "Swegger" ],
+      category: "Web",
+      icon: WebhookIcon,
+      features: [
+        "Sistema completo",
+        "Sistema de Pós-venda",
+        "Front-end", 
+        "Back-end",
+
+      ],
+      links: {
+        site:'https://feedtrack.site/'
+      },
+    },
+    
+
   ];
 
   const categories = ["Todos", "Mobile", "Web", "Design"];
@@ -265,7 +333,7 @@ const Projects = () => {
                         Ver Demo
                       </motion.a>
                     )}
-                    {project.links.github && project.links.github !== "#" && (
+                    {project.links.site && project.links.site !== "#" && (
                       <motion.a
                         href={project.links.github}
                         target="_blank"
@@ -275,8 +343,9 @@ const Projects = () => {
                         whileTap={{ scale: 0.95 }}
                         className="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transition-all duration-300"
                       >
-                        <Github size={18} />
-                        Código
+                        
+                        <a href={project.links.site} target="_blank"
+                        className="flex items-center gap-1"><WebhookIcon size={18} />Link</a>
                       </motion.a>
                     )}
                   </div>
